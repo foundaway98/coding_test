@@ -7,9 +7,8 @@ def solution(numbers):
     for item in c:
         tmp.append(item[0]+item[1])
     tmp.sort()
-    answer = [tmp[0]]
-    for item in tmp:
-        if item != answer[-1]:
-            answer.append(item)
+    answer = list(set(tmp))
+    answer.sort()
+    
     
     return answer
