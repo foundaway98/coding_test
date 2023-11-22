@@ -10,7 +10,7 @@ def solution(n):
     d[2] = 1
     
     def fibo(n):
-        if n == 0 or n == 1 or n == 2:
+        if n <= 2:
             return d[n]
         else:
             if not d[n]:
