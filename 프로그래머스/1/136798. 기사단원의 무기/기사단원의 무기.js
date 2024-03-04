@@ -10,18 +10,14 @@ function solution(number, limit, power) {
             }
         }
         cnt *= 2
-        
         if(Math.sqrt(knight) - parseInt(Math.sqrt(knight)) === 0){
             cnt -= 1
         }
         if(cnt > limit){
             cnt = power
         }
-        
         knights.push(cnt)
     }
-    console.log(knights)
-    
     
     for(let p of knights){
         answer += p
